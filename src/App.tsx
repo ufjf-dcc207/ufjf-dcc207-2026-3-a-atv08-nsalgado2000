@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import Pacote from "./Pacote";
 import type { PacoteType } from "./types";
@@ -20,6 +21,7 @@ const data: Array<PacoteType> = [
 ];
 
 function App() {
+  const [pacotes, setPacotes] = useState(data);
   return (
     <section>
       <h2>Pacotes</h2>
